@@ -5,13 +5,6 @@ terraform {
       version = "5.66.0"
     }
   }
-
-  backend "s3" {
-    bucket = ""
-    key    = "expense-vpcc"
-    region = "us-east-1"
-    dynamodb_table = "81s-locking"
-  }
 }
 
 provider "aws" {
